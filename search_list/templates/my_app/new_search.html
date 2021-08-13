@@ -1,26 +1,62 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-    <form action="{% url 'new_search' %}" method="post">
-    {% csrf_token %}
-        <input type="text" name="search" placeholder="Search" class="validate">
-         <button class="btn waves-effect waves-light" type="submit" name="action">
-             Submit
-             <i class="material-icons right">send</i>
-         </button>
-    </form>
-    <div class="center">
-        <h2> {{  search | title }}</h2>
-    </div>
-
-    <div class="row">
-{#    {% for posting in final_postings %}#}
-        <div class="col s4">
-            <div class="card">
-
-            </div>
+<div class="center">
+    <h2 style="text-align: center">{{ search | title }}</h2>
+ <div class="row">
+    <div class="col s4">
+      <div class="card">
+        <div class="card-image">
+            <a href="/"><img src="/" alt=""></a>
         </div>
+        <div class="card-content">
+          <p>TEST.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
     </div>
+     <div class="col s4">
+      <div class="card">
+        <div class="card-image">
+            <a href="/"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/k-p-1-ae-0036.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=b52c28c28aa88a6e524455c80ea9ed85" alt=""></a>
+        </div>
+        <div class="card-content">
+          <p>TEST.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+     <div class="col s4">
+      <div class="card">
+        <div class="card-image">
+            <a href="/"><img src="/" alt=""></a>
+        </div>
+        <div class="card-content">
+          <p>TEST.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{#    <div class="center">#}
+{#        <h2> {{  search | title }}</h2>#}
+{#    </div>#}
+{##}
+{#    <div class="row">#}
+{#    {% for posting in final_postings %}#}
+{#        <div class="col s4">#}
+{#            <div class="card">#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
 
 {% endblock %}
