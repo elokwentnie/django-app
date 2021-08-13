@@ -1,10 +1,57 @@
+{#{% load staticfiles %}#}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Search List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<h2>Testing to see if this works!</h2>
+
+<nav>
+    <div class="container nav-wrapper">
+        <a href="/" class="brand-logo">Search List</a>
+        <ul id="nav-mobile" class="right">
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <h2 style="text-align: center">What do you want to search for?</h2>
+    <div class="row">
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: #EE6E73">flash_on</i>
+                <p>Fast web scraper</p>
+                <p class="light center">Be fast.</p>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: darkslategray">tag_faces</i>
+                <p>Fast web scraper</p>
+                <p class="light center">Be happy.</p>
+            </div>
+        </div>
+        <div class="col s4">
+            <div class="center">
+                <i class="large material-icons" style="color: rosybrown">public</i>
+                <p>Fast web scraper</p>
+                <p class="light center">Be everywhere.</p>
+            </div>
+        </div>
+    </div>
+
+{% block content %}
+
+{% endblock content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</div>
 </body>
 </html>
