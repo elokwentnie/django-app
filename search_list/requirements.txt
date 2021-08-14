@@ -10,7 +10,6 @@ django-heroku==0.3.1
 heroku==0.1.4
 idna==2.8
 pip==21.2.2
-psycopg2==2.7.6.1
 pycparser==2.19
 pyOpenSSL==19.0.0
 PySocks==1.7.0
